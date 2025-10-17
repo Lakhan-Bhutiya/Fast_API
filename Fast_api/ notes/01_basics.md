@@ -17,3 +17,12 @@ It is designed for speed and ease of use, leveraging **Python type hints** and *
 pip install fastapi
 pip install uvicorn
 
+```
+---
+
+# Run the app:
+```
+uvicorn main:app --reload
+```
+---
+
