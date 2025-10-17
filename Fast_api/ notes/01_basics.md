@@ -25,4 +25,26 @@ pip install uvicorn
 uvicorn main:app --reload
 ```
 ---
+Basic Example
+```
+from fastapi import FastAPI
 
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello FastAPI!"}
+```
+Access in browser:
+```
+ http://127.0.0.1:8000/
+```
+
+HTTP Methods:
+---------------------------
+| Method	||    Purpose   |
+---------------------------
+GET	    ||    Retrieve data
+POST	  || 	  Create data
+PUT	    ||    Update data
+DELETE	||    Delete data
