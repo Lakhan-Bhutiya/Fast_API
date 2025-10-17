@@ -46,7 +46,7 @@ HTTP Methods:
 | Method	||    Purpose   |
 ---------------------------
 GET	    ||    Retrieve data
-POST	  || 	  Create data
+POST	|| 	  Create data
 PUT	    ||    Update data
 DELETE	||    Delete data
 ```
