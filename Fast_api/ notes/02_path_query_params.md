@@ -38,7 +38,7 @@ Query parameters are passed after a “?” in the URL and are optional.
 They are typically used for filtering, sorting, or pagination.
 
 Example
-```
+```python
 @app.get("/patients")
 def get_patients(sort_by: str = "age", order: str = "asc"):
     return {"sort_by": sort_by, "order": order}
@@ -52,7 +52,7 @@ Response:
 # Multiple Query Parameters
 
 You can include multiple optional parameters easily:
-```
+```python
 @app.get("/search")
 def search_data(name: str = None, city: str = None, limit: int = 10):
     return {"name": name, "city": city, "limit": limit}
@@ -72,7 +72,7 @@ URL Example:
 Combining Path & Query Parameters
 
 You can use both together for more flexibility.
-```
+```python
 @app.get("/patients/{patient_id}")
 def get_patient(patient_id: str, details: bool = False):
     if details:
